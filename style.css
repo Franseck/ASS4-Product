@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.main {
+  width: 80%;
+  height: 70vh;
+  display: flex;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  align-items: center;
+}
+
+.left {
+  width: 50%;
+  height: 70vh;
+}
+.left img {
+  width: 100%;
+  height: 70vh;
+}
+
+.info {
+  width: 50%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  gap: 1rem;
+  padding: 2.5rem;
+
+  font-family: "Gugi", sans-serif;
+}
+.info h1 {
+  display: flex;
+  align-items: center;
+}
+.info h1 span {
+  padding: 0.6rem;
+  background-color: rgb(127, 127, 180);
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  margin-left: 0.7rem;
+}
+.storage {
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.storage .second {
+  background-color: rgb(127, 127, 180);
+  color: white;
+}
+button {
+  padding: 0.5rem 1.4rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 1rem;
+  font-family: "Gugi", sans-serif;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.oldprice {
+  display: flex;
+  flex-direction: column;
+}
+.cart {
+  background-color: rgb(127, 127, 180);
+  color: white;
+  padding: 0.7rem;
+  border-radius: 0.7rem;
+  font-family: "Gugi", sans-serif;
+  cursor: pointer;
+}
+
+.price {
+  font-size: 1.7rem;
+  color: rgb(230, 61, 202);
+  font-weight: 800;
+}
+.oldprice {
+  font-size: 1rem;
+  font-weight: 00;
+}
+
+@media screen and (max-width: 1400px) {
+  .main {
+    flex-direction: column;
+    height: auto;
+    margin-top: 5rem;
+  }
+  .left {
+    border-bottom: 2px solid;
+    height: auto;
+    width: auto;
+  }
+  .container {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .info {
+    height: 100%;
+    width: 100%;
+    padding: 0.7rem;
+    text-align: center;
+  }
+  .info h1 {
+    padding: 0.3rem;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .left img {
+    height: 30vh;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .info {
+    font-size: 0.5rem;
+  }
+  .info h1 span {
+    font-size: 0.7rem;
+  }
+  .storage button {
+    display: inline-block;
+    padding: 0.8rem;
+    margin: 0.4rem;
+    font-size: 0.5rem;
+  }
+  .bottom {
+    justify-content: center;
+  }
+  .bottom button {
+    font-size: 0.7rem;
+  }
+  .oldprice .price {
+    font-size: 0.8rem;
+  }
+}
